@@ -50,6 +50,9 @@
     <Reference Include="HRSM.DATAMODEL">
       <HintPath>..\..\HRSM.DATAMODEL\HRSM.DATAMODEL\bin\Debug\HRSM.DATAMODEL.dll</HintPath>
     </Reference>
+    <Reference Include="HRSM.GLXERP">
+      <HintPath>..\..\HRSM.DATAMODEL\HRSM.GLXERP\bin\Debug\HRSM.GLXERP.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,10 +123,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\GuardSiteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\jQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -155,12 +160,24 @@
     </None>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Images\power-hellas.png" />
+    <Content Include="Images\ajaxLoading.gif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\jquery.mask.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Style\navbar-fixed-top.css" />
+    <Content Include="Style\TalbeHover.css" />
+    <Content Include="Style\Validation.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -174,10 +191,14 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\Create.cshtml" />
+    <Content Include="Views\Shared\EmployeeForm.cshtml" />
+    <Content Include="Views\GuardSite\Index.cshtml" />
+    <Content Include="Views\GuardSite\Create.cshtml" />
+    <Content Include="Views\Shared\GuardSiteForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

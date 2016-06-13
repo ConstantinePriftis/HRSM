@@ -20,5 +20,6 @@ namespace HRSM.DATAMODEL
         public string EMAIL { get; set; }
     
         public virtual EMPLOYEE EMPLOYEE { get; set; }
+        public virtual SITEMANAGER SITEMANAGER { get; set; }
     }
 }

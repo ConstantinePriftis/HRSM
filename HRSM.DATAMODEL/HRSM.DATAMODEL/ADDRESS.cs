@@ -21,5 +21,6 @@ namespace HRSM.DATAMODEL
         public string POSTALCODE { get; set; }
     
         public virtual EMPLOYEE EMPLOYEE { get; set; }
+        public virtual GUARDSITE GUARDSITE { get; set; }
     }
 }
